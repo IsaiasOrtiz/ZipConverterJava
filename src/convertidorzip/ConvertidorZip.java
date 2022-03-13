@@ -19,13 +19,13 @@ public class ConvertidorZip {
      * @param args the command line arguments
      */
     //Directorio a comprimir
-    static String directorio = "C:\\Users\\Isaias\\Desktop\\archivoszip";
+    static String directorioLeer = "C:\\Users\\Isaias\\Desktop\\archivoszip";
     //Directorio donde se guarda el comprimido.
     static String nombreComprimido = "C:\\Users\\Isaias\\Desktop\\archivoszip\\XmlComprimido.zip";
 
     public static void main(String args[]) {
         List<File> fileList = new ArrayList<File>();
-        File directorio = new File("C:\\Users\\Isaias\\Desktop\\archivoszip");
+        File directorio = new File(directorioLeer);
         if (directorio.isDirectory()) {
             for (File f : directorio.listFiles()) {
                 //Aqui podemos hacer validaciones para incluir o excluir archivos
